@@ -1,0 +1,6 @@
+quarkus.datasource.db-kind=postgresql
+quarkus.datasource.jdbc.url=jdbc:postgresql://coffee-shop-database:5432/coffeeshop
+quarkus.datasource.username=coffee
+quarkus.datasource.password=coffee
+
+barista.url=http://barista.wk11-prod-coffeeshop.svc.cluster.local/processes
