@@ -6,6 +6,7 @@ public enum CoffeeType {
 
     ESPRESSO("Espresso"),
     POUR_OVER("Pour over"),
+    MELANGE("Viennese Melange"),
     LATTE("Latte");
 
     private final String description;
