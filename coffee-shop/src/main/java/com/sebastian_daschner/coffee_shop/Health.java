@@ -9,7 +9,7 @@ import org.eclipse.microprofile.health.Readiness;
 
 import javax.enterprise.context.ApplicationScoped;
 //import io.quarkus.logging.json.runtime.LoggingJsonRecorder;
-import java.util.logging
+import java.util.logging;
 
 
 @Readiness
