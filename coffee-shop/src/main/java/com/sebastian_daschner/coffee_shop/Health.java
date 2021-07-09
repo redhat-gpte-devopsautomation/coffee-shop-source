@@ -16,7 +16,7 @@ import javax.enterprise.context.ApplicationScoped;
 public class Health implements HealthCheck {
 
 	// private static final Logger log = LoggerFactory.getLogger(Health.class);
-  private static final java.util.logging.Logger logger =  java.util.logging.Logger.getLogger(this.getClass().getName());
+  java.util.logging.Logger logger =  java.util.logging.Logger.getLogger(this.getClass().getName());
 
 	@Override
     public HealthCheckResponse call() {
