@@ -10,7 +10,7 @@ import org.eclipse.microprofile.health.Readiness;
 import javax.enterprise.context.ApplicationScoped;
 //import io.quarkus.logging.json.runtime.LoggingJsonRecorder;
 //import java.util.logging.Logger;
-import java.util.logging.Level;
+// import java.util.logging.Level;
 
 
 @Readiness
@@ -20,12 +20,14 @@ public class Health implements HealthCheck {
 	//LoggingJsonRecorder log = LoggingJsonRecorder.class.
 	// private static final Logger log = LoggerFactory.getLogger(HealthCheck.class);
 
-  private static final Logger logger = Logger.getLogger(Health.class.getName());
+  // private static final Logger logger = Logger.getLogger(Health.class.getName());
 
+  java.util.logging.Logger logger =  java.util.logging.Logger.getLogger(this.getClass().getName());
 
 	@Override
     public HealthCheckResponse call() {
-        logger.log(Level.INFO, "Test log of structured arg");
+        logger.info("This is an info message");
+  //      logger.log(Level.INFO, "Test log of structured arg");
         return HealthCheckResponse.up("coffee-shop");
 
     }
