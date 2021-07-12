@@ -11,3 +11,9 @@ release.properties
 
 *.log
 *.jar
+
+.project
+.settings
+.classpath
+.settings/
+
